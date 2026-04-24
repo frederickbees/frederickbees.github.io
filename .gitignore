@@ -1,0 +1,13 @@
+# Jekyll build output and caches
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler
+vendor/
+# github-pages gem pins all dependencies, so the lockfile isn't authoritative
+Gemfile.lock
+
+# macOS
+.DS_Store
