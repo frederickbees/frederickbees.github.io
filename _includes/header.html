@@ -1,0 +1,35 @@
+<header class="site" id="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <svg class="brand-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+      <span class="brand-text">
+        <span class="n1">{{ site.short_name }}</span>
+        <span class="n2">FCBA · Est. {{ site.established_year }}</span>
+      </span>
+    </a>
+    <button class="mobile-toggle" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="main" id="main-nav" aria-label="Primary">
+      {% for item in site.data.nav %}
+        {% if item.children %}
+          <span class="has-children">
+            <a href="{{ item.url | relative_url }}">{{ item.label }}</a>
+            <span class="submenu">
+              {% for child in item.children %}
+                {% if child.external %}
+                  <a href="{{ child.url }}" target="_blank" rel="noopener">{{ child.label }} ↗</a>
+                {% else %}
+                  <a href="{{ child.url | relative_url }}">{{ child.label }}</a>
+                {% endif %}
+              {% endfor %}
+            </span>
+          </span>
+        {% else %}
+          <a href="{{ item.url | relative_url }}">{{ item.label }}</a>
+        {% endif %}
+      {% endfor %}
+      <a href="{{ '/join/' | relative_url }}" class="cta">Join FCBA</a>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<section class="page-hero">
+  <div class="container reveal">
+    <p class="kicker">{{ page.kicker | default: page.title }}</p>
+    <h1>{{ page.heading | default: page.title }}{% if page.heading_em %} <em>{{ page.heading_em }}</em>{% endif %}</h1>
+    {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="prose reveal">
+      {{ content }}
+    </div>
+  </div>
+</section>

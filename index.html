@@ -1,0 +1,229 @@
+---
+layout: home
+title: Frederick County Beekeeping Association
+---
+{% assign meeting = site.data.meetings | first %}
+{% assign meeting_date = meeting.date | date: "%b|%d|%Y" | split: "|" %}
+
+<section class="hero">
+  <div class="hero-bees" aria-hidden="true">
+    <svg class="bee b1"><use href="#bee"/></svg>
+    <svg class="bee b2"><use href="#bee"/></svg>
+    <svg class="bee b3"><use href="#bee"/></svg>
+  </div>
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-kicker"><span class="dot"></span>{{ site.club.location }} · Since {{ site.established_year }}</span>
+        <h1 class="display">Small town.<br><em>Big buzz.</em></h1>
+        <p class="tagline" style="margin-top:1.25rem; max-width:32ch">
+          {{ site.club.tagline_sub }}
+        </p>
+
+        <div class="hero-cta">
+          <a href="{{ '/join/' | relative_url }}" class="btn btn--primary">
+            Join the hive
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="{{ '/meetings/' | relative_url }}" class="btn btn--ghost">Next meeting</a>
+        </div>
+
+        <div class="hero-meta">
+          <div>
+            <div class="label">Next gathering</div>
+            <div class="value">{{ meeting.date | date: "%a, %b %-d" }} · {{ meeting.time }}</div>
+          </div>
+          <div>
+            <div class="label">Where</div>
+            <div class="value">{{ meeting.venue }}</div>
+          </div>
+          <div>
+            <div class="label">Members</div>
+            <div class="value">300+ Beekeepers</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-art-inner">
+          <div class="hero-art-top">
+            <span>Edition Nº {{ site.current_year | minus: site.established_year }}</span>
+            <span>Spring {{ site.current_year }}</span>
+          </div>
+          <svg class="hero-art-bee"><use href="#bee"/></svg>
+          <div class="hero-art-center">The Hive<em>— a field journal —</em></div>
+          <div class="hero-art-bottom">Educate · Advocate · Pollinate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="alt">
+  <div class="container">
+    <div class="mission-grid">
+      <div class="reveal">
+        <p class="kicker">Our mission</p>
+        <h2 class="section-title">We keep bees so bees can keep <span class="serif">keeping us.</span></h2>
+      </div>
+      <div class="reveal">
+        <blockquote class="pullquote">
+          FCBA is an organization of current and future beekeepers in the Frederick County, Maryland area. Our mission is to provide support and information to each other, to educate the public, and to advocate for the practice of responsible beekeeping.
+        </blockquote>
+        <p style="color:var(--muted)">We're part classroom, part support group, part swarm-response network — a few hundred neighbors (and several million tiny roommates) sharing what we've learned the hard way so you don't have to.</p>
+        <div class="stats">
+          <div class="stat"><span class="n">300+</span><span class="l">Members</span></div>
+          <div class="stat"><span class="n">{{ site.current_year | minus: site.established_year }}</span><span class="l">Years buzzing</span></div>
+          <div class="stat"><span class="n">12</span><span class="l">Events a year</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="do">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">What we do</p>
+      <h2 class="section-title">Six things <span class="serif">we love to talk about</span> over coffee.</h2>
+      <p class="lede">Everything we do sits inside one little hexagon: help people become better, kinder, more curious stewards of the honey bee.</p>
+    </div>
+
+    <div class="honeycomb">
+      {% for card in site.data.what_we_do %}
+      <article class="hc-card reveal">
+        <span class="icon"><svg width="40" height="40"><use href="#ic-{{ card.icon }}"/></svg></span>
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.body | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        <a class="more" href="{{ card.link_url | relative_url }}">{{ card.link_label }}</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="meetings" class="alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">Upcoming</p>
+      <h2 class="section-title">Come say hi — <span class="serif">bring questions.</span></h2>
+    </div>
+
+    <div class="event-banner reveal">
+      <div class="event-inner">
+        <div class="event-date">
+          <div class="m">{{ meeting_date[0] }}</div>
+          <div class="d">{{ meeting_date[1] }}</div>
+          <div class="y">{{ meeting_date[2] }}</div>
+        </div>
+        <div class="event-body">
+          <p class="kicker">Monthly meeting · {{ meeting.open_to }}</p>
+          <h3>{{ meeting.title }}</h3>
+          <p>{{ meeting.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+          <div class="meta-row">
+            <span>🕖 {{ meeting.time }}</span>
+            <span>📍 {{ meeting.venue }}</span>
+            <span>☕ Coffee provided</span>
+          </div>
+        </div>
+        <div class="event-cta">
+          <a href="{{ '/meetings/' | relative_url }}" class="btn">See all meetings</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="removal">
+  <div class="container">
+    <div class="removal reveal">
+      <div class="removal-body">
+        <p class="kicker" style="color:var(--red)">Emergency · Free service</p>
+        <h2 class="section-title" style="margin-top:0">Found a swarm?<br><span class="serif">Please don't spray.</span></h2>
+        <p style="color:var(--muted); max-width:40ch">Honey bees in a tight cluster on a branch, fence, or grill cover are usually docile and just looking for a new home. One of our volunteers can come collect them — free of charge — and give them a proper hive to live in.</p>
+        <p style="color:var(--muted); max-width:40ch"><strong style="color:var(--ink)">Note:</strong> we only handle honey bees. For wasps, hornets, or yellow jackets, you'll want a licensed pest-control service.</p>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.5rem">
+          <a href="{{ site.club.bee_removal_form }}" target="_blank" rel="noopener" class="btn btn--primary">Report a swarm</a>
+          <a href="{{ '/bee-removal/' | relative_url }}" class="btn btn--ghost">How it works</a>
+        </div>
+      </div>
+      <div class="removal-visual">
+        <div class="swarm-label">
+          <div class="big">"It's a swarm, not a war."</div>
+          <div class="small">— every beekeeper ever</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="resources" class="alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">Links &amp; library</p>
+      <h2 class="section-title">Go deeper. <span class="serif">Much deeper.</span></h2>
+      <p class="lede">{{ site.data.links.general.intro }}</p>
+    </div>
+
+    <div class="resources">
+      {% for item in site.data.links.general.items %}
+        {% assign i = forloop.index %}
+        {% if i < 10 %}{% assign num = '0' | append: i %}{% else %}{% assign num = i %}{% endif %}
+        {% if item.external %}
+          <a class="res reveal" href="{{ item.url }}" target="_blank" rel="noopener">
+        {% else %}
+          <a class="res reveal" href="{{ item.url | relative_url }}">
+        {% endif %}
+            <span class="res-num">{{ num }}</span>
+            <h3 class="res-title">{{ item.label }}</h3>
+            <p class="res-desc">{{ item.desc }}</p>
+          </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="dark">
+  <div class="container">
+    <div class="section-head reveal" style="margin-bottom:2rem">
+      <p class="kicker">FAQ</p>
+      <h2 class="section-title">Things everyone <span class="serif">quietly Googles.</span></h2>
+    </div>
+    <div class="faq">
+      {% for item in site.data.faqs limit:5 %}
+      <div class="faq-item">
+        <button class="faq-q">{{ item.q }}</button>
+        <div class="faq-a">{{ item.a | markdownify }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    <p style="text-align:center; margin-top:2rem"><a href="{{ '/faq/' | relative_url }}" class="btn btn--honey">All FAQs →</a></p>
+  </div>
+</section>
+
+<section id="join">
+  <div class="container">
+    <div class="join-grid">
+      <div class="reveal">
+        <p class="kicker">Membership</p>
+        <h2 class="section-title">Join the <span class="serif">nicest club</span> in Frederick County.</h2>
+        <p style="color:var(--muted); max-width:48ch">Your dues pay for speakers, student scholarships, the extractor, fair supplies, and — most importantly — keeping this whole little operation going for another {{ site.current_year | minus: site.established_year }} years. Existing members can renew here too.</p>
+      </div>
+      <div class="join-card reveal">
+        <p class="kicker">Annual membership</p>
+        <h3>Individual or Household</h3>
+        <div class="join-price">
+          <span class="amt">$15</span><span class="per">/ year</span>
+        </div>
+        <ul>
+          <li>Monthly meetings &amp; speakers</li>
+          <li>Mentor match for new beekeepers</li>
+          <li>Club extractor access</li>
+          <li>Members-only resource library</li>
+          <li>Quarterly newsletter</li>
+        </ul>
+        <a href="{{ '/join/' | relative_url }}" class="btn btn--primary">Join or renew →</a>
+      </div>
+    </div>
+  </div>
+</section>

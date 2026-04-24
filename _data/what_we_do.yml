@@ -1,0 +1,48 @@
+# Card grid on the home page.
+- title: Bee School
+  icon: book
+  body: >-
+    Our beloved short course for brand-new beekeepers — six sessions,
+    one field day, and honestly more snacks than strictly necessary.
+  link_label: Spring class schedule
+  link_url: /bee-classes/
+
+- title: Monthly Meetings
+  icon: cal
+  body: >-
+    Second Thursday, 7 PM. Guest speakers, show-and-tell frames, and a
+    door prize that is *usually* honey. Visitors welcome.
+  link_label: See the calendar
+  link_url: /meetings/
+
+- title: Swarm Response
+  icon: swarm
+  body: >-
+    Found a basketball-sized cluster on your mailbox? Don't panic —
+    they're probably just moving houses. We'll come collect them for free.
+  link_label: Report a swarm
+  link_url: /bee-removal/
+
+- title: Mentorship
+  icon: hands
+  body: >-
+    New beeks paired with experienced keepers for a full season. Because
+    reading about varroa and actually finding varroa are two different sports.
+  link_label: Request a mentor
+  link_url: /join/
+
+- title: Outreach & Fair
+  icon: leaf
+  body: >-
+    The Great Frederick Fair honey booth, school visits, library demos,
+    and the occasional very patient observation hive.
+  link_label: Book an outreach
+  link_url: /outreach/
+
+- title: Equipment Co-op
+  icon: hive
+  body: >-
+    Shared honey extractor for members — because you probably don't need
+    a $900 stainless steel drum sitting in your garage year-round.
+  link_label: Extractor policy
+  link_url: /extractor-policy/

@@ -1,0 +1,54 @@
+# Primary navigation — drives the header and mobile menu.
+# `url` supports both site-relative paths and absolute URLs (prefixed with http).
+- label: About
+  url: /about/
+- label: What We Do
+  url: /outreach/
+- label: Meetings
+  url: /meetings/
+- label: Bee Classes
+  url: /bee-classes/
+- label: Bee Removal
+  url: /bee-removal/
+- label: Resources
+  url: /resources/
+  children:
+    - { label: General Information,   url: /resources/general/ }
+    - { label: Maryland Apiary Laws,  url: /resources/apiary-laws/ }
+    - { label: Research & Science,    url: /resources/research/ }
+    - { label: Best Practices,        url: /resources/best-practices/ }
+    - { label: Periodicals,           url: /resources/periodicals/ }
+    - { label: Organizations,         url: /resources/organizations/ }
+    - { label: YouTube Channels,      url: /resources/youtube/ }
+    - { label: Facebook Pages,        url: /resources/facebook/ }
+    - { label: "Dave's Tips",         url: "https://drive.google.com/drive/folders/1X5VwTGY-ZvT8anDhF3I-l1E4Sw8_9x-K?usp=sharing", external: true }
+- label: Vendors
+  url: /vendors/
+- label: FAQ
+  url: /faq/
+- label: Contact
+  url: /contact/
+
+# Footer link columns
+footer:
+  - title: Visit
+    links:
+      - { label: About FCBA,       url: /about/ }
+      - { label: Monthly Meetings, url: /meetings/ }
+      - { label: Bee Classes,      url: /bee-classes/ }
+      - { label: 2026 Fair,        url: /fair-2026/ }
+      - { label: Past Editions,    url: /past-editions/ }
+  - title: Resources
+    links:
+      - { label: General Information, url: /resources/general/ }
+      - { label: Best Practices,      url: /resources/best-practices/ }
+      - { label: MD Apiary Laws,      url: /resources/apiary-laws/ }
+      - { label: Vendors,             url: /vendors/ }
+      - { label: Extractor Policy,    url: /extractor-policy/ }
+  - title: Reach Us
+    links:
+      - { label: Contact Us,   url: /contact/ }
+      - { label: Bee Removal,  url: /bee-removal/ }
+      - { label: Join / Renew, url: /join/ }
+      - { label: Donations,    url: /donations/ }
+      - { label: Members Only, url: /members/ }

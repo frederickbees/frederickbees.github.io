@@ -1,0 +1,32 @@
+# The "next meeting" hero banner reads from the FIRST entry.
+# Keep the list in chronological order. Past meetings can stay for history.
+- date: 2026-05-14
+  time: "7:00 PM"
+  title: "Splits, swarms & second-year surprises"
+  speaker: "Dave Morris, Master Beekeeper"
+  venue: "Walkersville Library"
+  open_to: "Open to all"
+  summary: >-
+    Master beekeeper Dave Morris walks through what to do *right now* if
+    your hive is getting crowded — and what to do if it's too late.
+  add_to_calendar: "#"
+
+- date: 2026-06-11
+  time: "7:00 PM"
+  title: "Honey judging & summer supering"
+  speaker: "Member panel"
+  venue: "Walkersville Library"
+  open_to: "Open to all"
+  summary: >-
+    Bring a jar of your best extracted honey. We'll taste, we'll grade,
+    we'll disagree politely about water content.
+
+- date: 2026-07-09
+  time: "7:00 PM"
+  title: "Varroa in July: treatment options for 2026"
+  speaker: "Dr. Paula Reynolds"
+  venue: "Walkersville Library"
+  open_to: "Open to all"
+  summary: >-
+    A clear-eyed look at this season's monitoring thresholds and which
+    treatments still punch above their weight.

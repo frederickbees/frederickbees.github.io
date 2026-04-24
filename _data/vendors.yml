@@ -1,0 +1,31 @@
+- name: Mann Lake
+  url: https://www.mannlakeltd.com/
+  desc: Full-line hive equipment, feed, and tools. Ships from multiple US hubs.
+
+- name: Dadant & Sons
+  url: https://www.dadant.com/
+  desc: One of the oldest beekeeping suppliers in the country.
+
+- name: Betterbee
+  url: https://www.betterbee.com/
+  desc: Good selection, reliable customer service, lots of how-to videos.
+
+- name: Brushy Mountain (now Mann Lake)
+  url: https://www.mannlakeltd.com/
+  desc: Classic brand, now part of Mann Lake.
+
+- name: Kelley Beekeeping
+  url: https://www.kelleybees.com/
+  desc: Kentucky-based, woodenware a specialty.
+
+- name: Blue Sky Bee Supply
+  url: https://www.blueskybeesupply.com/
+  desc: Great for bottles, labels, and packaging.
+
+- name: Ross Rounds
+  url: https://rossrounds.com/
+  desc: Comb honey supplies.
+
+- name: Maryland Honey Company (local)
+  url: "#"
+  desc: Local Maryland supplier — call first for pickup hours.

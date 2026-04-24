@@ -1,0 +1,65 @@
+# ─────────────────────────────────────────────────────────────────────
+# Site-wide settings
+# ─────────────────────────────────────────────────────────────────────
+title: Frederick County Beekeeping Association
+short_name: Frederick Bees
+tagline: Educate and Advocate for Responsible Beekeeping
+description: >-
+  FCBA is a community of current and future beekeepers serving
+  Frederick County, Maryland — since 1976.
+url: "https://www.frederickbees.org"
+baseurl: ""
+lang: en
+established_year: 1976
+current_year: 2026
+
+# ─────────────────────────────────────────────────────────────────────
+# Club details (surfaced in header, footer, contact page)
+# ─────────────────────────────────────────────────────────────────────
+club:
+  location: "Frederick County, Maryland"
+  meeting_venue: "Walkersville Library"
+  meeting_schedule: "Second Thursday of the month, 7:00 PM"
+  bee_removal_form: "https://docs.google.com/forms/d/e/1FAIpQLScx1drmVE3t1M91QMttEMGsm828dImYRhcBdI4TdvIB6TLR1w/viewform?usp=header"
+  daves_tips: "https://drive.google.com/drive/folders/1X5VwTGY-ZvT8anDhF3I-l1E4Sw8_9x-K?usp=sharing"
+  bylaws_pdf: "/assets/docs/bylaws.pdf"
+  logo_jpg: "/assets/img/fcba-logo.jpg"
+  tagline_hero: "Small town. Big buzz."
+  tagline_sub: >-
+    A community of backyard beekeepers, curious neighbors, and folks
+    who just really like honey — learning together since the dawn of
+    waggle-dance disco.
+
+# ─────────────────────────────────────────────────────────────────────
+# Build settings
+# ─────────────────────────────────────────────────────────────────────
+markdown: kramdown
+highlighter: rouge
+permalink: /:path/:basename/
+sass:
+  style: compressed
+
+# GitHub Pages compatible plugins only
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+
+# Default front matter — so every page picks up the right layout
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page

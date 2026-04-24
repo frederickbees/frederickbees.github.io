@@ -1,0 +1,30 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="foot-brand">
+        <div style="display:flex; align-items:center; gap:.75rem; margin-bottom:1rem">
+          <svg width="44" height="44"><use href="#logo-mark"/></svg>
+          <div>
+            <div class="display" style="margin:0">{{ site.short_name }}</div>
+            <div class="smallcaps" style="color:var(--honey); opacity:.8">FCBA · Est. {{ site.established_year }}</div>
+          </div>
+        </div>
+        <p>Educating and advocating for responsible beekeeping in {{ site.club.location }} — and eating an unreasonable amount of honey while we do it.</p>
+      </div>
+      {% for col in site.data.nav.footer %}
+      <div>
+        <h4>{{ col.title }}</h4>
+        <ul>
+          {% for link in col.links %}
+            <li><a href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="foot-bottom">
+      <span>© {{ site.established_year }}–{{ site.current_year }} {{ site.title }}</span>
+      <span>Made with pollen &amp; patience · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></span>
+    </div>
+  </div>
+</footer>

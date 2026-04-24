@@ -1,0 +1,26 @@
+---
+title: FAQ
+permalink: /faq/
+layout: default
+---
+
+<section class="page-hero">
+  <div class="container reveal">
+    <p class="kicker">FAQ</p>
+    <h1>Things everyone <em>quietly Googles.</em></h1>
+    <p class="lede">If your question isn't here, bring it to the next meeting — half our members are just collected Q&amp;A in human form.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="faq reveal">
+      {% for item in site.data.faqs %}
+      <div class="faq-item">
+        <button class="faq-q">{{ item.q }}</button>
+        <div class="faq-a">{{ item.a | markdownify }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

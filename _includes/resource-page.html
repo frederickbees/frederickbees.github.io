@@ -1,0 +1,27 @@
+{% assign data = site.data.links[include.key] %}
+<section class="page-hero">
+  <div class="container reveal">
+    <p class="kicker">{{ page.title }}</p>
+    <h1>{{ page.title }}.</h1>
+    {% if data.intro %}<p class="lede">{{ data.intro }}</p>{% endif %}
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="resources reveal">
+      {% for item in data.items %}
+        {% assign i = forloop.index %}
+        {% if i < 10 %}{% assign num = '0' | append: i %}{% else %}{% assign num = i %}{% endif %}
+        {% if item.external %}
+          <a class="res" href="{{ item.url }}" target="_blank" rel="noopener">
+        {% else %}
+          <a class="res" href="{{ item.url | relative_url }}">
+        {% endif %}
+          <span class="res-num">{{ num }}</span>
+          <h3 class="res-title">{{ item.label }}</h3>
+          <p class="res-desc">{{ item.desc }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

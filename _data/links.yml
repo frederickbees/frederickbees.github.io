@@ -1,0 +1,78 @@
+# Grouped links used on resource pages. The key matches the page URL slug.
+# Add a new link by copying any entry — no HTML editing needed.
+
+general:
+  intro: >-
+    A curated pile of the stuff we actually send new members — no
+    affiliate chaff, no outdated PDFs from 2004 (okay, maybe a few from
+    2004, they still hold up).
+  items:
+    - { label: "Beekeeping Best Practices",     url: "/resources/best-practices/", desc: "The MD State Beekeepers' living guide." }
+    - { label: "Maryland Apiary Laws",          url: "/resources/apiary-laws/",    desc: "What you must register & when." }
+    - { label: "Dave's Tips",                   url: "https://drive.google.com/drive/folders/1X5VwTGY-ZvT8anDhF3I-l1E4Sw8_9x-K?usp=sharing", desc: "A Google Drive folder full of monthly wisdom.", external: true }
+    - { label: "Research & Science",            url: "/resources/research/",        desc: "The peer-reviewed deep end." }
+    - { label: "YouTube Channels",              url: "/resources/youtube/",        desc: "The creators we actually trust." }
+    - { label: "Periodicals",                   url: "/resources/periodicals/",    desc: "Journals worth your subscription." }
+    - { label: "Vendors",                       url: "/vendors/",                  desc: "Gear suppliers, local & online." }
+    - { label: "Organizations",                 url: "/resources/organizations/",  desc: "Sister clubs and statewide groups." }
+    - { label: "Facebook Pages",                url: "/resources/facebook/",       desc: "Active beekeeping groups to follow." }
+
+best_practices:
+  intro: >-
+    Straight from the Maryland State Beekeepers Association — the guide
+    most of our members keep bookmarked.
+  items:
+    - { label: "MSBA Best Management Practices", url: "https://www.mdbeekeepers.org/", desc: "State-level BMPs for all seasons.", external: true }
+    - { label: "Honey Bee Health Coalition",     url: "https://honeybeehealthcoalition.org/", desc: "Varroa management decision guide.", external: true }
+
+apiary_laws:
+  intro: >-
+    Maryland requires all beekeepers to register their apiaries with
+    the state. It's free, takes about ten minutes, and helps the state
+    apiarist track disease outbreaks.
+  items:
+    - { label: "MDA Apiary Inspection Program", url: "https://mda.maryland.gov/plants-pests/Pages/apiary_inspection.aspx", desc: "Register your apiary with the state.", external: true }
+    - { label: "Maryland Annotated Code — Apiary Inspection", url: "https://mgaleg.maryland.gov/", desc: "The statute itself, if you like statutes.", external: true }
+
+research:
+  intro: >-
+    Peer-reviewed resources for the members who like their science a
+    little stronger than club-night anecdotes.
+  items:
+    - { label: "Bee Informed Partnership",   url: "https://beeinformed.org/", external: true, desc: "Annual colony loss survey & management reports." }
+    - { label: "USDA Bee Research Lab",      url: "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/bee-research-laboratory/", external: true, desc: "Beltsville's working lab, right down the road." }
+    - { label: "Project Apis m.",            url: "https://www.projectapism.org/", external: true, desc: "Applied honey bee research funding body." }
+
+periodicals:
+  intro: "Journals and magazines worth a subscription."
+  items:
+    - { label: "American Bee Journal",  url: "https://americanbeejournal.com/", external: true, desc: "Published monthly since 1861." }
+    - { label: "Bee Culture",           url: "https://www.beeculture.com/",    external: true, desc: "The magazine of American beekeeping." }
+    - { label: "Journal of Apicultural Research", url: "https://www.tandfonline.com/journals/tjar20", external: true, desc: "Peer-reviewed, international." }
+
+organizations:
+  intro: "Sister clubs, state associations, and national organizations."
+  items:
+    - { label: "Maryland State Beekeepers Association", url: "https://www.mdbeekeepers.org/", external: true, desc: "Our state-level parent organization." }
+    - { label: "Eastern Apicultural Society",           url: "https://easternapiculture.org/", external: true, desc: "Annual conference, master beekeeper program." }
+    - { label: "American Beekeeping Federation",        url: "https://www.abfnet.org/",        external: true, desc: "National trade + advocacy group." }
+    - { label: "Apiary Inspectors of America",          url: "https://apiaryinspectors.org/",  external: true, desc: "State inspector network." }
+
+youtube:
+  intro: "Video creators we send to new members without hesitation."
+  items:
+    - { label: "University of Guelph Honey Bee Research Centre", url: "https://www.youtube.com/@UofGHBRC", external: true, desc: "Calm, practical, Canadian." }
+    - { label: "Kamon Reynolds – Tennessee's Bees",              url: "https://www.youtube.com/@TennesseesBees", external: true, desc: "Commercial beekeeper, clear explanations." }
+    - { label: "Inspecting & Understanding Hives",               url: "https://www.youtube.com/", external: true, desc: "Walk-throughs of real inspections." }
+
+facebook:
+  intro: "Active groups and pages for day-to-day questions."
+  items:
+    - { label: "Beekeeping (Maryland)", url: "https://www.facebook.com/groups/",   external: true, desc: "Regional Q&A group." }
+    - { label: "FCBA Members Group",    url: "https://www.facebook.com/groups/",   external: true, desc: "Members-only club discussion." }
+
+education:
+  intro: "Formal training and master beekeeper pathways."
+  items:
+    - { label: "EAS Master Beekeeper Program",     url: "https://easternapiculture.org/certification/", external: true, desc: "Multi-year certification." }
+    - { label: "University of Montana Bee Courses", url: "https://www.umt.edu/", external: true, desc: "Online certificate programs." }

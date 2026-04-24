@@ -1,0 +1,29 @@
+# FCBA leadership + core contacts.
+# To add a new officer, copy any block and fill in the fields.
+board:
+  - role: President
+    name: "—"
+    email: president@frederickbees.org
+  - role: Vice President
+    name: "—"
+    email: vicepresident@frederickbees.org
+  - role: Secretary
+    name: "—"
+    email: secretary@frederickbees.org
+  - role: Treasurer
+    name: "—"
+    email: treasurer@frederickbees.org
+  - role: Membership
+    name: "—"
+    email: membership@frederickbees.org
+  - role: Webmaster
+    name: "—"
+    email: webmaster@frederickbees.org
+
+general:
+  email: info@frederickbees.org
+  mailing_address: |
+    Frederick County Beekeeping Association
+    P.O. Box 1, Frederick, MD 21701
+  social:
+    - { label: Facebook, url: "https://www.facebook.com/" }

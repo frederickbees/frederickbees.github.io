@@ -1,0 +1,64 @@
+// ============================================================================
+// Design tokens — edit these to reskin the site.
+// ============================================================================
+
+// --- Color palette (honey / black / brown) ---------------------------------
+$paper:     #FBF5E6;   // warm beeswax paper
+$paper-2:   #FFFDF5;   // lighter card
+$cream:     #F3E7C4;
+$honey:     #F4B400;   // primary — honey amber
+$honey-dk:  #D99100;
+$amber:     #E58500;
+$wax:       #C88B2D;
+$brown:     #5B3A1A;
+$brown-dk:  #2E1C0A;
+$ink:       #1A130A;   // near-black with warmth
+$muted:     #7A6A4E;
+$rule:      #E8DCBA;
+$red:       #B85B3A;   // terracotta, urgency only
+$leaf:      #6B8E23;
+
+// --- Typography -------------------------------------------------------------
+$font-sans:  'Libre Franklin', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+$font-serif: 'Fraunces', 'Georgia', serif;
+
+// --- Layout -----------------------------------------------------------------
+$container: 1200px;
+$gutter:    1.5rem;
+$radius:    6px;
+$ease-out:  cubic-bezier(.22, 1, .36, 1);
+
+// Breakpoints
+$bp-md: 768px;
+$bp-lg: 1024px;
+
+// --- Shadows ----------------------------------------------------------------
+$shadow-image:        0 4px 20px rgba(40, 25, 5, .10);
+$shadow-card-hover:   0 20px 40px rgba(70, 40, 10, .12);
+$shadow-ticket:       0 2px 4px rgba(40, 25, 5, .04), 0 20px 50px rgba(40, 25, 5, .10);
+
+// --- CSS custom properties (exposed for inline use) ------------------------
+:root {
+  --paper:    #{$paper};
+  --paper-2:  #{$paper-2};
+  --cream:    #{$cream};
+  --honey:    #{$honey};
+  --honey-dk: #{$honey-dk};
+  --amber:    #{$amber};
+  --wax:      #{$wax};
+  --brown:    #{$brown};
+  --brown-dk: #{$brown-dk};
+  --ink:      #{$ink};
+  --muted:    #{$muted};
+  --rule:     #{$rule};
+  --red:      #{$red};
+  --leaf:     #{$leaf};
+
+  --font-sans:  #{$font-sans};
+  --font-serif: #{$font-serif};
+
+  --container: #{$container};
+  --gutter:    #{$gutter};
+  --radius:    #{$radius};
+  --ease-out:  #{$ease-out};
+}
