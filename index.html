@@ -6,6 +6,8 @@ title: Frederick County Beekeeping Association
 {% assign meeting_date = meeting.date | date: "%b|%d|%Y" | split: "|" %}
 
 <section class="hero">
+  <div class="cloud c1" aria-hidden="true"></div>
+  <div class="cloud c2" aria-hidden="true"></div>
   <div class="hero-bees" aria-hidden="true">
     <svg class="bee b1"><use href="#bee"/></svg>
     <svg class="bee b2"><use href="#bee"/></svg>
@@ -15,8 +17,8 @@ title: Frederick County Beekeeping Association
     <div class="hero-grid">
       <div>
         <span class="hero-kicker"><span class="dot"></span>{{ site.club.location }} · Since {{ site.established_year }}</span>
-        <h1 class="display">Small town.<br><em>Big buzz.</em></h1>
-        <p class="tagline" style="margin-top:1.25rem; max-width:32ch">
+        <h1 class="display">Blue skies.<br><em>Busy bees.</em></h1>
+        <p class="tagline" style="margin-top:1.25rem; max-width:34ch">
           {{ site.club.tagline_sub }}
         </p>
 
@@ -44,15 +46,19 @@ title: Frederick County Beekeeping Association
         </div>
       </div>
 
-      <div class="hero-art" aria-hidden="true">
-        <div class="hero-art-inner">
-          <div class="hero-art-top">
-            <span>Edition Nº {{ site.current_year | minus: site.established_year }}</span>
-            <span>Spring {{ site.current_year }}</span>
+      <div class="hero-art">
+        <div class="photo-card main-photo">
+          <img src="{{ '/assets/img/community/slider-1.jpg' | relative_url }}" alt="A beekeeper and a small child in matching white bee suits in front of a wild swarm">
+          <div class="cap">
+            <span>Two generations, one swarm.</span>
+            <span class="tag">Field day</span>
           </div>
-          <svg class="hero-art-bee"><use href="#bee"/></svg>
-          <div class="hero-art-center">The Hive<em>— a field journal —</em></div>
-          <div class="hero-art-bottom">Educate · Advocate · Pollinate</div>
+        </div>
+        <div class="photo-card post-2" aria-hidden="true">
+          <img src="{{ '/assets/img/community/slider-2.jpg' | relative_url }}" alt="A row of pastel-painted hives in the meadow">
+        </div>
+        <div class="photo-card post-1" aria-hidden="true">
+          <img src="{{ '/assets/img/community/slider-3.jpg' | relative_url }}" alt="A member collecting a swarm from the underbrush">
         </div>
       </div>
     </div>
@@ -102,7 +108,31 @@ title: Frederick County Beekeeping Association
   </div>
 </section>
 
-<section id="meetings" class="alt">
+<section id="moments" class="alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">Moments from the hive</p>
+      <h2 class="section-title">Fifty years of <span class="serif">people, in suits.</span></h2>
+      <p class="lede">A quick scroll through the album — field days, bee school Saturdays, and the moment someone's pulled together a swarm out of tall grass without losing a single bee.</p>
+    </div>
+    <div class="moments reveal">
+      <div class="m-card m-tall">
+        <img src="{{ '/assets/img/community/beeclass.jpg' | relative_url }}" alt="A packed classroom of bee school students listening to a lecture">
+        <div class="m-cap"><span>Bee School, Saturday morning, sixty-eight of us.</span><span class="tag">Class</span></div>
+      </div>
+      <div class="m-card">
+        <img src="{{ '/assets/img/community/field-day.jpg' | relative_url }}" alt="Members in bee suits gathered around a hive on field day">
+        <div class="m-cap"><span>Field day, first-years on the frames.</span><span class="tag">Field</span></div>
+      </div>
+      <div class="m-card">
+        <img src="{{ '/assets/img/community/swarm-tree.jpg' | relative_url }}" alt="A swarm hanging in the branches of a tree">
+        <div class="m-cap"><span>Six feet off the ground, already calm.</span><span class="tag">Swarm</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="meetings">
   <div class="container">
     <div class="section-head reveal">
       <p class="kicker">Upcoming</p>
@@ -134,7 +164,7 @@ title: Frederick County Beekeeping Association
   </div>
 </section>
 
-<section id="removal">
+<section id="removal" class="alt">
   <div class="container">
     <div class="removal reveal">
       <div class="removal-body">
@@ -148,16 +178,20 @@ title: Frederick County Beekeeping Association
         </div>
       </div>
       <div class="removal-visual">
-        <div class="swarm-label">
-          <div class="big">"It's a swarm, not a war."</div>
-          <div class="small">— every beekeeper ever</div>
+        <div class="rv-tile">
+          <img src="{{ '/assets/img/community/swarm-fence.png' | relative_url }}" alt="A swarm clustered on a wooden garden fence post">
+          <div class="rv-cap"><span class="tag">On a fence</span>A tight cluster — almost certainly docile, just house-hunting.</div>
+        </div>
+        <div class="rv-tile">
+          <img src="{{ '/assets/img/community/cutout.png' | relative_url }}" alt="Exposed honeycomb from a colony cut-out">
+          <div class="rv-cap"><span class="tag">Cut-out</span>Sometimes a swarm has already moved in. We can help with that too.</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="resources" class="alt">
+<section id="resources">
   <div class="container">
     <div class="section-head reveal">
       <p class="kicker">Links &amp; library</p>

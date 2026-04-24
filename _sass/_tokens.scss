@@ -1,21 +1,31 @@
 // ============================================================================
 // Design tokens — edit these to reskin the site.
+// Sky variation: pale-blue atmosphere, honey kept as the accent.
 // ============================================================================
 
-// --- Color palette (honey / black / brown) ---------------------------------
-$paper:     #FBF5E6;   // warm beeswax paper
-$paper-2:   #FFFDF5;   // lighter card
-$cream:     #F3E7C4;
-$honey:     #F4B400;   // primary — honey amber
+// --- Color palette (sky / honey / brown) -----------------------------------
+// Sky-blue family — new "paper" & cool surfaces
+$sky-50:    #F0F7FB;   // lightest — paper
+$sky-100:   #DFEEF7;   // section alt
+$sky-200:   #C3DFEF;
+$sky-300:   #9FCBE4;
+$sky-400:   #6FB0D4;
+$sky-500:   #3E8FC0;
+$sky-700:   #1F5A82;   // ink-on-sky contrast
+
+$paper:     $sky-50;
+$paper-2:   #FFFFFF;   // lighter card
+$cream:     #FBF3DA;   // soft honey wash for dark backgrounds
+$honey:     #F4B400;   // accent — honey amber (unchanged)
 $honey-dk:  #D99100;
 $amber:     #E58500;
 $wax:       #C88B2D;
 $brown:     #5B3A1A;
 $brown-dk:  #2E1C0A;
 $ink:       #1A130A;   // near-black with warmth
-$muted:     #7A6A4E;
-$rule:      #E8DCBA;
-$red:       #B85B3A;   // terracotta, urgency only
+$muted:     #5A6E82;   // cooled for sky context
+$rule:      #CFE2EE;
+$red:       #B85B3A;
 $leaf:      #6B8E23;
 
 // --- Typography -------------------------------------------------------------
@@ -33,12 +43,20 @@ $bp-md: 768px;
 $bp-lg: 1024px;
 
 // --- Shadows ----------------------------------------------------------------
-$shadow-image:        0 4px 20px rgba(40, 25, 5, .10);
-$shadow-card-hover:   0 20px 40px rgba(70, 40, 10, .12);
-$shadow-ticket:       0 2px 4px rgba(40, 25, 5, .04), 0 20px 50px rgba(40, 25, 5, .10);
+$shadow-image:        0 4px 20px rgba(20, 60, 90, .10);
+$shadow-card-hover:   0 20px 40px rgba(30, 90, 130, .14);
+$shadow-ticket:       0 2px 4px rgba(20, 60, 90, .04), 0 20px 50px rgba(20, 60, 90, .12);
 
 // --- CSS custom properties (exposed for inline use) ------------------------
 :root {
+  --sky-50:   #{$sky-50};
+  --sky-100:  #{$sky-100};
+  --sky-200:  #{$sky-200};
+  --sky-300:  #{$sky-300};
+  --sky-400:  #{$sky-400};
+  --sky-500:  #{$sky-500};
+  --sky-700:  #{$sky-700};
+
   --paper:    #{$paper};
   --paper-2:  #{$paper-2};
   --cream:    #{$cream};
