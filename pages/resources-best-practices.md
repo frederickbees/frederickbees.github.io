@@ -1,7 +1,6 @@
 ---
 title: Beekeeping Best Practices
 permalink: /resources/best-practices/
-layout: default
+layout: resource-list
 resource_key: best_practices
 ---
-{% include resource-page.html key=page.resource_key %}

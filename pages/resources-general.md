@@ -1,7 +1,6 @@
 ---
 title: General Information
 permalink: /resources/general/
-layout: default
+layout: resource-list
 resource_key: general
 ---
-{% include resource-page.html key=page.resource_key %}

@@ -1,7 +1,6 @@
 ---
 title: YouTube Channels
 permalink: /resources/youtube/
-layout: default
+layout: resource-list
 resource_key: youtube
 ---
-{% include resource-page.html key=page.resource_key %}

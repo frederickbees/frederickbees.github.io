@@ -1,7 +1,6 @@
 ---
 title: Maryland Apiary Laws
 permalink: /resources/apiary-laws/
-layout: default
+layout: resource-list
 resource_key: apiary_laws
 ---
-{% include resource-page.html key=page.resource_key %}

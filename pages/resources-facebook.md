@@ -1,7 +1,6 @@
 ---
 title: Facebook Pages
 permalink: /resources/facebook/
-layout: default
+layout: resource-list
 resource_key: facebook
 ---
-{% include resource-page.html key=page.resource_key %}

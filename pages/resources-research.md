@@ -1,7 +1,6 @@
 ---
 title: Research & Science
 permalink: /resources/research/
-layout: default
+layout: resource-list
 resource_key: research
 ---
-{% include resource-page.html key=page.resource_key %}

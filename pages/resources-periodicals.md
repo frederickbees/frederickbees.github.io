@@ -1,7 +1,6 @@
 ---
 title: Periodicals
 permalink: /resources/periodicals/
-layout: default
+layout: resource-list
 resource_key: periodicals
 ---
-{% include resource-page.html key=page.resource_key %}

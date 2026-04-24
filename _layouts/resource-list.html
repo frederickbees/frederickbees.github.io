@@ -1,11 +1,19 @@
-{% assign data = site.data.links[include.key] %}
+---
+layout: default
+---
+{% assign data = site.data.links[page.resource_key] %}
 <section class="page-hero">
   <div class="container reveal">
-    <p class="kicker">{{ page.title }}</p>
-    <h1>{{ page.title }}.</h1>
-    {% if data.intro %}<p class="lede">{{ data.intro }}</p>{% endif %}
+    <p class="kicker">{{ page.kicker | default: page.title }}</p>
+    <h1>{{ page.heading | default: page.title }}{% if page.heading_em %} <em>{{ page.heading_em }}</em>{% endif %}</h1>
+    {% if page.lede %}
+      <p class="lede">{{ page.lede }}</p>
+    {% elsif data.intro %}
+      <p class="lede">{{ data.intro }}</p>
+    {% endif %}
   </div>
 </section>
+
 <section>
   <div class="container">
     <div class="resources reveal">
