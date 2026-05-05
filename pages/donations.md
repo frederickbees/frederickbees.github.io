@@ -2,14 +2,14 @@
 title: Donations
 permalink: /donations/
 kicker: Support FCBA
-heading: A little goes
+heading: A little bit goes
 heading_em: a long way.
 lede: FCBA is an all-volunteer, donation-supported nonprofit. Every dollar funds speakers, scholarships, and the club extractor.
 ---
 
 ## Where your donation goes
 
-- **Bee School scholarships** for students and first-time beekeepers
+- **Bee Academy scholarships** for students and first-time beekeepers
 - **Speaker fees** for visiting master beekeepers and researchers
 - **Outreach supplies** — observation hive, kids' activities, printed materials
 - **Club equipment** — extractor maintenance, meeting supplies
